@@ -1,0 +1,12 @@
+.number-input {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0;
+    line-height: 30px;
+    box-sizing: border-box;
+    border: 0;
+    font-family: Noto Sans,sans-serif;
+    font-size: 14px;
+    background-color: #fff;
+}
