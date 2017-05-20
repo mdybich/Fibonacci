@@ -74,7 +74,7 @@ function getIterativeResultInSeconds(amount) {
   computeFibonacciIterative(amount);
   const end = performance.now();
 
-  return ((end - begin) / 1000).toFixed(3);
+  return ((end - begin) / 1000).toFixed(5);
 }
 
 function getRecursiveResultsInSeconds(amount) {
@@ -82,7 +82,7 @@ function getRecursiveResultsInSeconds(amount) {
   computeFibonacciRecursive(amount);
   const end = performance.now();
 
-  return ((end - begin) / 1000).toFixed(3);
+  return ((end - begin) / 1000).toFixed(5);
 }
 
 function getDynamicRecursiveResultsInSeconds(amount) {
@@ -90,7 +90,7 @@ function getDynamicRecursiveResultsInSeconds(amount) {
   computeFibonacciDynamicRecursive(amount);
   const end = performance.now();
 
-  return ((end - begin) / 1000).toFixed(3);
+  return ((end - begin) / 1000).toFixed(5);
 }
 
 

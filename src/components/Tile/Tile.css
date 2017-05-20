@@ -1,6 +1,5 @@
 .tile {
-    width: calc(50% - 30px);
-    margin-right: 30px;
+    margin-bottom: 30px;
 }
 
 .tile-header {
@@ -19,8 +18,4 @@
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
     background-color: #E5FFF7;
-}
-
-.tile:last-child {
-    margin-right: 0;
 }

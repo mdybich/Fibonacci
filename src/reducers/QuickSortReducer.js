@@ -76,7 +76,7 @@ function getIterativeResultInSeconds(arrayToSort) {
   quickSortIterative(arrayToSort);
   const end = performance.now();
 
-  return ((end - begin) / 1000).toFixed(3);
+  return ((end - begin) / 1000).toFixed(5);
 }
 
 function getRecursiveResultsInSeconds(arrayToSort) {
@@ -84,7 +84,7 @@ function getRecursiveResultsInSeconds(arrayToSort) {
   quickSortRecursive(arrayToSort);
   const end = performance.now();
 
-  return ((end - begin) / 1000).toFixed(3);
+  return ((end - begin) / 1000).toFixed(5);
 }
 
 function getNativeResultsInSeconds(arrayToSort) {
@@ -92,7 +92,7 @@ function getNativeResultsInSeconds(arrayToSort) {
   quickSortNative(arrayToSort);
   const end = performance.now();
 
-  return ((end - begin) / 1000).toFixed(3);
+  return ((end - begin) / 1000).toFixed(5);
 }
 
 

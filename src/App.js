@@ -9,8 +9,10 @@ class App extends Component {
     return (
       <div className="container">
         <Header />
-        <FibonacciContainer />
-        <QuickSortContainer />
+        <div className="flex">
+          <FibonacciContainer />
+          <QuickSortContainer />
+        </div>
       </div>
     );
   }

@@ -32,7 +32,7 @@ const mapDispatchToProps = (dispatch) => {
 
 const FibonacciContainer = (props) => {
   return (
-    <div className="flex">
+    <div className="tile-group">
       <Tile
         title="Fibonacci - data"
       >

@@ -13,6 +13,15 @@ body {
   display: flex;
 }
 
+.tile-group {
+  width: 50%;
+  margin-right: 30px;
+}
+
+.tile-group:last-child {
+  margin-right: 0;
+}
+
 .info-label {
   font-style: italic;
   margin-right: 20px;

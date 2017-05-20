@@ -32,7 +32,7 @@ const mapDispatchToProps = (dispatch) => {
 
 const QuickSortContainer = (props) => {
   return (
-    <div className="flex mt10">
+    <div className="tile-group">
       <Tile
         title="QuickSort - data"
       >
