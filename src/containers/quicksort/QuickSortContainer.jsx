@@ -2,39 +2,39 @@ import * as React from "react";
 import { connect } from "react-redux";
 import { Tile, NumberInput, Button, Checkbox } from "../../components";
 import {
-  setFibonacciAmount, computeFibonacci,
-  switchFibonacciRecursionFlag, switchFibonacciIterativeFlag, switchFibonacciDynamicRecursionFlag
+  setQuickSortAmount, computeQuickSort, switchQuickSortIterativeFlag,
+  switchQuickSortRecursionFlag, switchQuickSortNativeFlag
 } from "../../actions";
 
 const mapStateToProps = (state) => {
-  return {...state.fibonacci};
+  return {...state.quickSort};
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
     setAmount: (amount) => {
-      dispatch(setFibonacciAmount(amount));
+      dispatch(setQuickSortAmount(amount));
     },
-    computeFibonacci: () => {
-      dispatch(computeFibonacci())
+    computeQuickSort: () => {
+      dispatch(computeQuickSort())
     },
     switchRecursionFlag: () => {
-      dispatch(switchFibonacciRecursionFlag())
+      dispatch(switchQuickSortRecursionFlag())
     },
     switchIterativeFlag: () => {
-      dispatch(switchFibonacciIterativeFlag())
+      dispatch(switchQuickSortIterativeFlag())
     },
-    switchDynamicRecursionFlag: () => {
-      dispatch(switchFibonacciDynamicRecursionFlag())
+    switchNativeFlag: () => {
+      dispatch(switchQuickSortNativeFlag())
     }
   }
 };
 
-const FibonacciContainer = (props) => {
+const QuickSortContainer = (props) => {
   return (
-    <div className="flex">
+    <div className="flex mt10">
       <Tile
-        title="Fibonacci - data"
+        title="QuickSort - data"
       >
         <div>
           <Checkbox
@@ -52,9 +52,9 @@ const FibonacciContainer = (props) => {
         </div>
         <div>
           <Checkbox
-            label="Dynamic Recursive"
-            checked={props.isDynamicRecursiveActive}
-            onChange={() => props.switchDynamicRecursionFlag()}
+            label="Native"
+            checked={props.isNativeActive}
+            onChange={() => props.switchNativeFlag()}
           />
         </div>
         <div className="mt10">
@@ -66,14 +66,14 @@ const FibonacciContainer = (props) => {
         </div>
         <div className="mt10 flex">
           <Button
-            onClick={() => props.computeFibonacci()}
+            onClick={() => props.computeQuickSort()}
             label="Calculate"
             className="mla"
           />
         </div>
       </Tile>
       <Tile
-        title="Fibonacci - results"
+        title="QuickSort - results"
       >
         <div>
           <span className="info-label">Imperative result:</span>
@@ -84,12 +84,12 @@ const FibonacciContainer = (props) => {
           {props.recursiveResult} seconds
         </div>
         <div className="mt10">
-          <span className="info-label">Dynamic Recursive result:</span>
-          {props.dynamicRecursiveResult} seconds
+          <span className="info-label">Native result:</span>
+          {props.nativeResult} seconds
         </div>
       </Tile>
     </div>
   );
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(FibonacciContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(QuickSortContainer);

@@ -6,7 +6,7 @@ export const NumberInput = (props) => {
     <input type="number"
            className="number-input"
            value={props.value}
-           onChange={props.onChange}
+           onChange={(e) => props.onChange(e.target.value)}
     />
   )
 };

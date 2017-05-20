@@ -21,3 +21,15 @@ body {
 .mr10 {
   margin-right: 10px;
 }
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.mla {
+  margin-left: auto;
+}

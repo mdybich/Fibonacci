@@ -1,12 +1,21 @@
 .number-input {
     position: relative;
-    width: 100%;
     padding: 0 10px;
     margin: 0;
+    width: 100px;
     line-height: 30px;
     box-sizing: border-box;
     border: 0;
     font-family: Noto Sans,sans-serif;
     font-size: 14px;
     background-color: #fff;
+}
+
+.number-input:hover {
+    box-shadow: 3px 3px 3px 0 rgba(1,87,155,.75);
+}
+
+.number-input:focus {
+    box-shadow: 3px 3px 3px 0 rgba(1,87,155,.75);
+    outline: none;
 }

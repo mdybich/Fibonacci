@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Header } from "./components";
 import FibonacciContainer from "./containers/fibonacci/FibonacciContainer";
+import QuickSortContainer from "./containers/quicksort/QuickSortContainer";
 import './App.css';
 
 class App extends Component {
@@ -9,6 +10,7 @@ class App extends Component {
       <div className="container">
         <Header />
         <FibonacciContainer />
+        <QuickSortContainer />
       </div>
     );
   }

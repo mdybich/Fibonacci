@@ -4,10 +4,12 @@ import { createStore, combineReducers } from "redux";
 import { Provider } from "react-redux";
 import App from './App';
 import fibonacci from "./reducers/FibonacciReducer"
+import quickSort from "./reducers/QuickSortReducer";
 import './index.css';
 
 const reducers = combineReducers({
-  fibonacci
+  fibonacci,
+  quickSort
 });
 
 const store = createStore(

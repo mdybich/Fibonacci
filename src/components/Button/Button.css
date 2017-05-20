@@ -1,0 +1,20 @@
+.button {
+    display: inline-block;
+    min-width: 150px;
+    height: 30px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 0;
+    border-radius: 4px;
+    text-align: center;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-family: Noto Sans,sans-serif;
+    white-space: nowrap;
+    color: #fff;
+    background-color: #01579b;
+    box-shadow: 3px 3px 3px 0 rgba(1,87,155,0);
+    transition: box-shadow .3s;
+    cursor: pointer;
+    outline: none;
+}
